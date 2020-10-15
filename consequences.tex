@@ -1,0 +1,42 @@
+\begin{frame}
+\frametitle{Functional Programming}
+\begin{center}
+There are broader consequences once we commit to functional programming \ldots
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Software resiliency}
+\begin{center}
+One of them is an ability to efficiency and effectively ensure our software is correct
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Software sandcastles}
+\begin{block}{Who has one of these software systems?}
+\begin{itemize}
+\item<1-> the tests take two hours to run
+\item<2-> so you commit, push and go to the coffee shop
+\item<3-> on your way back from the coffee shop you receive an email
+\item<4-> the tests failed because the build couldn't find the conf file
+\item<5-> you finally fix the build and tests so they pass
+\item<6-> you are onto your third coffee of the day
+\item<7-> you put the software into production
+\item<8-> the software falls over in a crumbling heap anyway
+\item<9-> ``but it works on my machine!''
+\item<9-> go back to step 1
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Software resiliency}
+\begin{block}{it is because we are functional programming \ldots}
+\begin{itemize}
+\item<1> we can use \textbf{types} to determine the behaviour of our software
+\item<2> we can use \textbf{automated testing} to make up for where types left gaps
+\end{itemize}
+\end{block}
+\end{frame}
+
