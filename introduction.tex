@@ -8,6 +8,7 @@ What does it \emph{mean}?
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{Suppose the following program \ldots}
 \begin{lstlisting}[style=java]
 int wibble(int a, int b) {
@@ -23,6 +24,7 @@ blobble(wibble(x, y), wibble(x, y));
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{and we refactor out these common expressions \ldots}
 \begin{lstlisting}[style=java]
 int wibble(int a, int b) {
@@ -38,6 +40,7 @@ blobble(`wibble(x, y)`, `wibble(x, y)`);
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{assign the expression to a value}
 \begin{lstlisting}[style=java]
 int wibble(int a, int b) {
@@ -55,12 +58,14 @@ blobble(`r`, `r`);
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{center}
 Did the program just change?
 \end{center}
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{Yes, the program changed \ldots}
 \begin{lstlisting}[style=java]
 int wibble(int a, int b) {
@@ -78,6 +83,7 @@ blobble(r, r);
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{Suppose this slightly different program \ldots}
 \begin{lstlisting}[style=java]
 int pibble(int a, int b) {
@@ -92,6 +98,7 @@ globble(pibble(x, y), pibble(x, y));
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{and we refactor out these common expressions \ldots}
 \begin{lstlisting}[style=java]
 int pibble(int a, int b) {
@@ -106,6 +113,7 @@ globble(`pibble(x, y)`, `pibble(x, y)`);
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{What is Functional Programming?}
 \begin{block}{assign the expression to a value}
 \begin{lstlisting}[style=java]
 int pibble(int a, int b) {
@@ -122,18 +130,21 @@ globble(`r`, `r`);
 \end{frame}
 
 \begin{frame}
+\frametitle{What is Functional Programming?}
 \begin{center}
 This time, did the program just change?
 \end{center}
 \end{frame}
 
 \begin{frame}
+\frametitle{What is Functional Programming?}
 \begin{block}{It's the same program}
 For given inputs, the same outputs are given, with no observable changes to the program
 \end{block}
 \end{frame}
 
 \begin{frame}
+\frametitle{What is Functional Programming?}
 \begin{block}{Functional Programming is the idea that}
 We can \textbf{always replace expressions with a value, without affecting the program behaviour}
 \end{block}

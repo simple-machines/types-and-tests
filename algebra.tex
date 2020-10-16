@@ -48,6 +48,25 @@ boolean boolean2boolean(boolean b) {
 
 \begin{frame}[fragile]
 \frametitle{Counting inhabitants}
+\begin{block}{}
+\begin{lstlisting}[style=java]
+boolean boolean2boolean(boolean b) {
+  // hidden from view 
+}
+\end{lstlisting}
+\end{block}
+\begin{block}{Here are all the possible functions}
+\begin{lstlisting}[style=java]
+return true;  // 1
+return false; // 2
+return b;     // 3
+return !b;    // 4
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Counting inhabitants}
 \begin{block}{What about this one?}
 \begin{lstlisting}[style=java]
 <A> A anything2anything(A a) {

@@ -186,17 +186,19 @@ prop_anythings2anythings2 =
 
 \begin{frame}[fragile]
 \frametitle{Once-inhabitance}
-\begin{block}{By this method, it becomes very explicit that \ldots}
+\begin{block}{}
+\begin{lstlisting}[style=haskell]
 <T> T anything2anything(T x) {
   // hidden from view 
 }
+\end{lstlisting}
 \end{block}
 \begin{center}
 This type is an example of \emph{once-inhabitance}
 
 There is only one function with this type
 
-\textbf{It is not possible to write tests for it \textemdash they are redundant}
+\textbf{It is not possible to write tests for it \textemdash tests are redundant}
 \end{center}
 \end{frame}
 
@@ -216,7 +218,7 @@ What about more realistic examples?
 -- the type implies this function does no I/O
 validateWebForm ::
   f WebForm
-  -> f (Either WebFormErrors Validated)
+  -> f (Either WebFormErrors ValidatedWebForm)
 
 -- this function may do I/O
 submitWebForm ::

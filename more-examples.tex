@@ -1,0 +1,56 @@
+\begin{frame}[fragile]
+\frametitle{Here are some more examples}
+\begin{block}{One inhabitant}
+\begin{lstlisting}[style=haskell]
+-- Haskell
+(b -> c) -> (a -> b) -> a -> c
+\end{lstlisting}
+
+\begin{lstlisting}[style=java]
+// Java
+<A, B, C>
+Function<A, C> c(Function<B, C> f, Function<A, B> g)
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Here are some more examples}
+\begin{block}{Two inhabitants}
+\begin{lstlisting}[style=haskell]
+-- Haskell
+a -> a -> a
+\end{lstlisting}
+
+\begin{lstlisting}[style=java]
+// Java
+<A>
+A c(A a1, A a2)
+\end{lstlisting}
+\end{block}
+\begin{center}
+Prove using the Yoneda lemma \lstinline{= boolean = 2}
+
+What tests can we write?
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Here are some more examples}
+\begin{block}{One inhabitant}
+\begin{lstlisting}[style=haskell]
+-- Haskell
+Functor f => a -> f b -> f a
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Here are some more examples}
+\begin{block}{Infinite inhabitants}
+\begin{lstlisting}[style=haskell]
+-- Haskell
+Applicative f => a -> f b -> f a
+\end{lstlisting}
+\end{block}
+\end{frame}
